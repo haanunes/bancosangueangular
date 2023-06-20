@@ -1,0 +1,47 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Doadores por estado</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+
+                                
+                                <div class="col-md-12">
+                                    
+                                        <table  class="table">
+                                            <thead>
+                                                <tr>
+                                                  <th>Estado</th>
+                                                  <th>Quantidade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let doador of doadoresPorEstado">  
+                                                    <td>{{ doador.estado }}</td>  
+                                                    <td>{{ doador.quantidade }}</td>  
+                                                   
+                                                  </tr>  
+                                              </tbody>
+                                       
+                                        </table>
+                                    
+                                </div>
+                               
+                                
+                            </div>
+                           
+                            
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,38 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Obesos por Sexo</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    
+                                    <table  class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Tipo sanguíneo</th>
+                                                <th>Média</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let obj of PercentualObesosPorSexo">  
+                                                <td>{{ obj.sexo }}</td>  
+                                                <td>{{ obj.percentual_obesos }}%</td>  
+                                                </tr>  
+                                            </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
